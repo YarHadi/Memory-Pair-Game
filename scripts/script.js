@@ -134,4 +134,14 @@ const characters = [
   
   mainField.addEventListener("click", onClick);
 
-  
+//   help menu
+
+const helpContainer=document.querySelector('.help-menu')
+
+function showHelp(){
+    helpContainer.style.display='flex';
+}
+
+function closeHelp(){
+    helpContainer.style.display='none';
+}
