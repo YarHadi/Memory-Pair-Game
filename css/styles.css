@@ -1,15 +1,72 @@
+/* header */
+
+.header-cont{
+	display: flex;
+	height: 50px;
+	background-color: aqua;
+	justify-content: end;
+	align-items: center;
+}
+
+.header-item{
+	height: 30px;
+	margin: 10px;
+}
+
+.help-button{
+
+
+}
+
+.user {
+	width: 30px;
+	height: 30px;
+	object-fit: cover;
+	border-radius: 100%;
+  }
+
+/* main-field */
+
+main{
+	display: flex;
+	justify-content: center;
+	background-image: url(../img/background.jpg);
+	background-size: cover;
+}
+
+.main-field{
+    display: grid;
+    grid-template-columns: repeat(4, 180px);
+    justify-items: center;
+    justify-content: center;
+    margin: 20px;
+	padding: 50px;
+	background-color: rgba(255, 255, 255, 0.76);
+}
+
+.character-img{
+	display: block;
+	max-height:230px;
+	max-width: 150px;
+}
+
+/* flip img */
+
 /* entire container, keeps perspective */
 .flip-container {
-	perspective: 1000px;
+	border: 2px solid black;
+	margin: 5px;
+	background-color: rgb(255, 255, 255);
 }
-	/* flip the pane when hovered */
+
+	/* flip the pane when hovered
 	.flip-container:hover .flipper, .flip-container.hover .flipper {
 		transform: rotateY(180deg);
-	}
+	} */
 
 .flip-container, .front, .back {
-	width: 320px;
-	height: 480px;
+	width: 150px;
+	height: 230px;
 }
 
 /* flip speed goes here */
@@ -17,13 +74,12 @@
 	transition: 0.6s;
 	transform-style: preserve-3d;
 
-	position: relative;
+	position: relative;	
 }
 
 /* hide back of pane during swap */
 .front, .back {
 	backface-visibility: hidden;
-
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -34,9 +90,16 @@
 	z-index: 2;
 	/* for firefox 31 */
 	transform: rotateY(0deg);
+	display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* back, initially hidden pane */
 .back {
 	transform: rotateY(180deg);
+	display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
