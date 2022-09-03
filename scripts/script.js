@@ -66,6 +66,8 @@ const characters = [
   //creacting field for a game
   
   const mainField = document.querySelector(".main-field");
+
+  var ourCharacters=characters.sort(function() { return 0.5 - Math.random() })
   
   function createMainField(data) {
     const cards = data
@@ -87,7 +89,7 @@ const characters = [
     mainField.innerHTML = cards;
   }
   
-  createMainField(characters.sort(function() { return 0.5 - Math.random() }));
+  createMainField(ourCharacters);
   
   //flip func
   
