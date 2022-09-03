@@ -70,6 +70,8 @@ const characters = [
   var ourCharacters = characters.sort(function () {
     return 0.5 - Math.random();
   });
+
+  var checkElements = [];
   
   function createMainField(data) {
     const cards = data
@@ -97,6 +99,7 @@ const characters = [
     ourCharacters = characters.sort(function () {
       return 0.5 - Math.random();
     });
+    checkElements = [];
     createMainField(ourCharacters);
   }
   
@@ -108,9 +111,7 @@ const characters = [
   }
   
   //check
-  
-  var checkElements = [];
-  
+    
   function checkCard(arr) {
     const card1Id = document.getElementById(arr[0]);
     const card1check = arr[1];
