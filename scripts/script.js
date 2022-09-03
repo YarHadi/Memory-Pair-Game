@@ -87,7 +87,7 @@ const characters = [
     mainField.innerHTML = cards;
   }
   
-  createMainField(characters);
+  createMainField(characters.sort(function() { return 0.5 - Math.random() }));
   
   //flip func
   
@@ -133,5 +133,5 @@ const characters = [
   };
   
   mainField.addEventListener("click", onClick);
-  
+
   
