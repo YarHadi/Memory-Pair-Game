@@ -130,6 +130,10 @@
 	height: 100%;
   }
   
+*{
+	user-select: none;
+}
+
   body {
 	display: flex;
 	flex-direction: column;
