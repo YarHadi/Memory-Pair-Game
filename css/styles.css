@@ -151,6 +151,7 @@
 	border: 2px solid black;
 	margin: 5px;
 	background-color: rgb(255, 255, 255);
+	cursor: pointer;
   }
   
   /* flip the pane when hovered

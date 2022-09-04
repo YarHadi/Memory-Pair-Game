@@ -118,20 +118,35 @@ const characters = [
     const card2Id = document.getElementById(arr[2]);
     const card2check = arr[3];
     if (card1check == card2check) {
-      checkElements = [];
-    } else {
+      checkElements = []; 
+       } else {
       checkElements = [];
       setTimeout(() => {
         card1Id.style.transform = "rotateY(0deg)";
         card2Id.style.transform = "rotateY(0deg)";
-      }, 500);
+      }, 1000);            
+    }
+    setTimeout(() => {
+      flipSwitch();      
+    }, 1000);        
+  }
+
+  // flip switch
+
+  var flipArg=1;
+
+  function flipSwitch(){
+    if(flipArg){
+      flipArg=0;
+    }else{
+      flipArg=1;
     }
   }
-  
+
   //event listener
   
   const onClick = ({ target }) => {
-    if (!target.dataset.id) {
+    if (!target.dataset.id || !flipArg) {
       return;
     }
     const selectedCharacter = target.dataset.id;
@@ -144,6 +159,7 @@ const characters = [
     }
     if (checkElements.length == 4) {
       checkCard(checkElements);
+      flipSwitch();
     }
   };
   
