@@ -128,17 +128,13 @@
   html,
   body {
 	height: 100%;
+	user-select: none;
   }
   
-*{
-	user-select: none;
-}
-
   body {
 	display: flex;
 	flex-direction: column;
 	overflow: clip;
-	user-select: none;
   }
   
   main {
@@ -165,7 +161,6 @@
 	max-height: 230px;
 	max-width: 150px;
 	-webkit-user-drag: none;
-	user-select: none;
   }
   
   /* flip img */
@@ -365,7 +360,6 @@
 	  grid-template-columns: repeat(4, 90px);
 	  margin: 5px;
 	  padding: 5px;
-	  user-select: none;
 	}
   
 	.character-img {
