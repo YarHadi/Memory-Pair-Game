@@ -359,6 +359,7 @@
 	  grid-template-columns: repeat(4, 90px);
 	  margin: 5px;
 	  padding: 5px;
+	  user-select: none;
 	}
   
 	.character-img {
@@ -388,5 +389,4 @@
 	  top: -516px;
 	}
   }
-  
   
