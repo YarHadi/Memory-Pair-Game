@@ -160,6 +160,7 @@
 	max-height: 230px;
 	max-width: 150px;
 	-webkit-user-drag: none;
+	user-select: none;
   }
   
   /* flip img */
