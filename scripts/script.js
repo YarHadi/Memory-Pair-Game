@@ -131,6 +131,9 @@ const characters = [
   //event listener
   
   const onClick = ({ target }) => {
+    if (!target.dataset.id) {
+      return;
+    }
     const selectedCharacter = target.dataset.id;
     const { id, check } = characters.find(
       (character) => character.id == selectedCharacter
