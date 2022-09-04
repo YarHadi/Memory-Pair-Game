@@ -83,8 +83,7 @@
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 44px;
-	text-align: center;
-  
+	text-align: center;  
 	color: rgb(0, 0, 0);
   }
   
@@ -95,6 +94,7 @@
 	width: 222px;
 	height: 335px;
 	transform: rotate(-6.54deg);
+	-webkit-user-drag: none;
   }
   .img-help-container {
 	display: grid;
@@ -109,7 +109,8 @@
 	height: 300px;
 	object-fit: cover;
 	margin: 10px;
-  }
+	-webkit-user-drag: none;
+	}
   
   .close-help {
 	font-size: 20px;
@@ -158,6 +159,7 @@
 	display: block;
 	max-height: 230px;
 	max-width: 150px;
+	-webkit-user-drag: none;
   }
   
   /* flip img */
