@@ -122,11 +122,12 @@
   }
   
   /* main-field */
-
-  html, body{
+  
+  html,
+  body {
 	height: 100%;
   }
-
+  
   body {
 	display: flex;
 	flex-direction: column;
@@ -140,7 +141,7 @@
 	justify-content: center;
 	flex-grow: 1;
   }
-
+  
   .main-field {
 	display: grid;
 	grid-template-columns: repeat(4, 180px);
@@ -167,11 +168,6 @@
 	background-color: rgb(255, 255, 255);
 	cursor: pointer;
   }
-  
-  /* flip the pane when hovered
-			.flip-container:hover .flipper, .flip-container.hover .flipper {
-				transform: rotateY(180deg);
-			} */
   
   .flip-container,
   .front,
@@ -389,5 +385,5 @@
 	  top: -516px;
 	}
   }
-
+  
   
