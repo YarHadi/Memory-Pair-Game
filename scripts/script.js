@@ -124,7 +124,7 @@ const characters = [
       setTimeout(() => {
         card1Id.style.transform = "rotateY(0deg)";
         card2Id.style.transform = "rotateY(0deg)";
-      }, 1000);            
+      }, 700);            
     }
     setTimeout(() => {
       flipSwitch();      
