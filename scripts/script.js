@@ -76,9 +76,7 @@ var checkElements = [];
 function createMainField(data) {
   const cards = data
     .map(
-      (
-        character
-      ) => `<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+      (character) => `<div class="flip-container">
           <div id="${character.id}" class="flipper">
               <div data-id="${character.id}" class="front">
                   <img data-id="${character.id}" class="character-img" src="./img/logo.png">
@@ -123,7 +121,9 @@ function checkCard(arr) {
     checkElements = [];
     setTimeout(() => {
       card1Id.style.transform = "rotateY(0deg)";
+      card1Id.parentElement.style.cursor = "pointer";
       card2Id.style.transform = "rotateY(0deg)";
+      card2Id.parentElement.style.cursor = "pointer";
     }, 700);
   }
   setTimeout(() => {
@@ -154,6 +154,7 @@ const onClick = ({ target }) => {
     (character) => character.id == selectedCharacter
   );
   if (checkElements.length < 4) {
+    document.getElementById(id).parentElement.style.cursor = "auto";
     flip(id);
     checkElements.push(id, check);
   }
