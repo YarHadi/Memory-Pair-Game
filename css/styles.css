@@ -122,14 +122,25 @@
   }
   
   /* main-field */
+
+  html, body{
+	height: 100%;
+  }
+
+  body {
+	display: flex;
+	flex-direction: column;
+	overflow: clip;
+  }
   
   main {
 	display: flex;
+	background: url(../img/background.jpg) center;
+	background-size: 100%;
 	justify-content: center;
-	background-image: url(../img/background.jpg);
-	background-size: cover;
+	flex-grow: 1;
   }
-  
+
   .main-field {
 	display: grid;
 	grid-template-columns: repeat(4, 180px);
@@ -138,6 +149,7 @@
 	margin: 20px;
 	padding: 50px;
 	background-color: rgba(255, 255, 255, 0.76);
+	height: fit-content;
   }
   
   .character-img {

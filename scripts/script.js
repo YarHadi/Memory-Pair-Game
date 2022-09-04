@@ -166,15 +166,19 @@ const characters = [
   mainField.addEventListener("click", onClick);
   
   //   help menu
+
+  const body=document.querySelector("body");
   
   const helpContainer = document.querySelector(".help-menu");
   
   function showHelp() {
     helpContainer.style.display = "flex";
+    body.style.overflow= "clip";
   }
   
   function closeHelp() {
     helpContainer.style.display = "none";
+    body.style.overflow= "auto";
   }
 
   
